@@ -16,8 +16,8 @@ let reglerEl = document.querySelector('#reglerTxt')
 let tidSanger = {
     "fireballAu": 31.6,
     "opusAu": 224,
-    "skallebank202Au": 131.8,
-    "meandyourmamaAu": 122.3
+    "skallebank2024Au": 131.8,
+    "meandyourmamaAu": 122.4
 }
 
 // let sangEl = sangerEls[Math.floor(Math.random() * sangerEls.length)] */
