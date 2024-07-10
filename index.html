@@ -25,20 +25,24 @@
             <p>1. Start sangen</p>
             <p>2. Trill til det blir 1 eller 6</p>
             <p>3. 1 eller 6? Send til person til venstre</p>
-            <p>4. Timer ute? Siste sjanse! (redemption)</p>
+            <p>4. Sang dropper? Siste sjanse! (redemption)</p>
             <p>5. 1 eller 6? Send til neste</p>
             <p>6. Ikke 1 eller 6? Straffekast</p>
             <p>7. 1? Du må downe</p>
             <p>8. 6? Kast igjen og det legges til ekstra</p>
             <p>9. Ikke 1 eller 6? Drikk så mange slurker terningen viser</p>
         </div>
+        <select id="sangvalg">
+            <option value="0">Fireball</option>
+            <option value="1">Opus</option>
+            <option value="2">Skallebank 2022</option>
+            <option value="3">Me and Your Mama</option>
+        </select>
         <div class="audios">
-            <audio src="./filer/lyder/stressmusikk.mp3" id="stressAu"></audio>
-            <audio src="./filer/lyder/duck.mp3" loop id="ferdigAu"></audio>
-            <audio src="./filer/lyder/carhorn.mp3" id="situasjonAu"></audio>
-
             <audio src="./filer/sanger/fireball.mp3" id="fireballAu" class="sang"></audio>
             <audio src="./filer/sanger/opus.mp3" id="opusAu" class="sang"></audio>
+            <audio src="./filer/sanger/skallebank2022.mp3" id="skallebank2024Au" class="sang"></audio>
+            <audio src="./filer/sanger/meandyourmama.mp3" id="meandyourmamaAu" class="sang"></audio>
         </div>
     </main>
 <script src="terning.js"></script>

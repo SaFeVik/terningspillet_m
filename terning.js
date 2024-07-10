@@ -7,17 +7,22 @@ let bodyEl = document.getElementsByTagName('body')[0]
 
 let sangerEls = document.querySelectorAll('.sang')
 
+let sangvalgEl = document.querySelector('#sangvalg')
+
 let reglerBtn = document.querySelector('#regler')
 let reglerEl = document.querySelector('#reglerTxt')
 
 
 let tidSanger = {
     "fireballAu": 31.6,
-    "opusAu": 224
+    "opusAu": 224,
+    "skallebank202Au": 131.8,
+    "meandyourmamaAu": 122.3
 }
 
-/* let sangEl = sangerEls[Math.floor(Math.random() * sangerEls.length)] */
-let sangEl = sangerEls[0]
+// let sangEl = sangerEls[Math.floor(Math.random() * sangerEls.length)] */
+
+let sangEl
 
 terningEl.addEventListener('click', kast)
 redemptionBtn.addEventListener('click', redemption)
@@ -104,16 +109,11 @@ async function timer(){
     // Mulig å kaste
     bodyEl.style.backgroundColor = "rgb(175, 75, 75)"
     comEl.innerHTML = `Kast 6 eller 1`
+    sangEl = sangerEls[sangvalgEl.value]
     sangEl.currentTime = 0
     startTime = performance.now();
     startCurrentTime = sangEl.currentTime;
     sangEl.play()
-    // Timer
-/*     while (sangEl.currentTime <= tidSanger[sangEl.id]){
-        await sleep(10)
-        console.log(sangEl.currentTime, tidSanger[sangEl.id])
-        console.log("------")
-    } */
     requestAnimationFrame(checkTime)
 }
 // Redemption kast
